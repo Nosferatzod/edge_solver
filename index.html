@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="./image/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="./video/lucy.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+    <div class="container">
+        <div id="display">0</div>
+        <div class="buttons">
+            <!-- Botões de números -->
+            <button class="num-btn" onclick="mostrarNumero(1)">1</button>
+            <button class="num-btn" onclick="mostrarNumero(2)">2</button>
+            <button class="num-btn" onclick="mostrarNumero(3)">3</button>
+            <button class="num-btn" onclick="mostrarNumero(4)">4</button>
+            <button class="num-btn" onclick="mostrarNumero(5)">5</button>
+            <button class="num-btn" onclick="mostrarNumero(6)">6</button>
+            <button class="num-btn" onclick="mostrarNumero(7)">7</button>
+            <button class="num-btn" onclick="mostrarNumero(8)">8</button>
+            <button class="num-btn" onclick="mostrarNumero(9)">9</button>
+            <button class="num-btn" onclick="mostrarNumero(0)">0</button>
+
+            <!-- Operadores -->
+            <button class="op-btn" onclick="armazenarOperador('+')">+</button>
+            <button class="op-btn" onclick="armazenarOperador('-')">-</button>
+            <button class="op-btn" onclick="armazenarOperador('*')">*</button>
+            <button class="op-btn" onclick="armazenarOperador('/')">/</button>
+
+            <!-- Funções científicas -->
+            <button class="op-btn" onclick="funçãoCientifica('sqrt')">√</button>
+            <button class="op-btn" onclick="funçãoCientifica('sin')">sin</button>
+            <button class="op-btn" onclick="funçãoCientifica('cos')">cos</button>
+            <button class="op-btn" onclick="funçãoCientifica('tan')">tan</button>
+
+            <!-- Outros -->
+            <button class="op-btn" onclick="calcularResultado()">=</button>
+            <button class="op-btn" onclick="limpar()">C</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
